@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SneakerProject2.Views.FilterPage">
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image x:Name="imgMen" Source="menu.png" Grid.Row="0" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Filter" Padding="-50,0,0,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="24" Grid.Row="0" Grid.Column="1"/>
+                    </Grid>
+
+                </StackLayout>
+            </Frame>
+            <ScrollView>
+                <StackLayout>
+                    <Frame BorderColor="Gray"
+                           CornerRadius="20"
+                           HasShadow="True"
+                           Margin="20,20,20,20"
+                           VerticalOptions="FillAndExpand">
+                        <StackLayout>
+                            <Picker x:Name="BrandEntry" Title="Brands" ItemsSource="{Binding Brands}"/>
+                            <Button Text="Search" Clicked="SearchByBrand"></Button>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

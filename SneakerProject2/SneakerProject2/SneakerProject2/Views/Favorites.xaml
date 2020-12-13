@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SneakerProject2.Views.Favorites">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image x:Name="imgMen" Source="menu.png" Grid.Row="0" Grid.Column="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Favorites" Padding="-50,0,0,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontSize="24" Grid.Row="0" Grid.Column="1"/>
+                    </Grid>
+
+                </StackLayout>
+            </Frame>
+            <StackLayout>
+                <ListView x:Name="lvwTrelloLists" RowHeight="50" SeparatorColor="Transparent" BackgroundColor="White" ItemSelected="lvwTrelloLists_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame BackgroundColor="WhiteSmoke" Margin="8" Padding="8,0">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Image x:Name="PictureShoe" Source="{Binding CardDesc}"  Grid.Column="0" WidthRequest="50" HeightRequest="50" VerticalOptions="Start"/>
+
+                                        <Label Text="{Binding name}" TextColor="Black" VerticalOptions="Center" Grid.Column="1" />
+                                        <Button Text="delete" VerticalOptions="Center" HorizontalOptions="End" Clicked="Btn_DeleteCard" Grid.Column="2" BackgroundColor="Red" TextColor="White" />
+                                    </Grid>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SneakerProject2.Views.DetailPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="INFO" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+            </Frame>
+            <ScrollView>
+                <StackLayout>
+                    <Frame BorderColor="Gray"
+                           CornerRadius="20"
+                           HasShadow="True"
+                           Margin="20,20,20,20"
+                           VerticalOptions="FillAndExpand">
+                        <StackLayout>
+                            
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="250" x:Name="rowStory"/>
+                                </Grid.RowDefinitions>
+                                
+                                <Image x:Name="PictureShoe"  WidthRequest="250" HeightRequest="250" Grid.Row="0" Grid.ColumnSpan="2"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label Text="Name:"             Margin="0,-20,0,0"      Grid.Row="1" Grid.ColumnSpan="2"    HorizontalTextAlignment="Center"  FontSize="16" FontAttributes="Bold" />
+                                <Label x:Name="lblShoename"     Margin="0,0,0,50"       Grid.Row="1" Grid.ColumnSpan="2"    HorizontalTextAlignment="Center"  FontSize="16"/>
+    
+                                <Label Text="SKU:"              Margin="0,-20,0,0"      Grid.Row="2" Grid.Column="0"        HorizontalTextAlignment="Center"  FontSize="16" FontAttributes="Bold"/>
+                                <Label x:Name="lblShoeSku"      Margin="0,0,0,0"        Grid.Row="2" Grid.Column="0"        HorizontalTextAlignment="Center"  FontSize="16"    />
+
+                                <Label Text="Brand:"            Margin="0,-20,0,0"      Grid.Row="2" Grid.Column="1"        HorizontalTextAlignment="Center"  FontSize="16" FontAttributes="Bold"/>
+                                <Label x:Name="lblShoeBrand"    Margin="0,0,0,0"        Grid.Row="2" Grid.Column="1"        HorizontalTextAlignment="Center"  FontSize="16"   />
+
+                                <Label Text="Release Date:"     Margin="0,-20,0,0"      Grid.Row="3" Grid.ColumnSpan="2"    HorizontalTextAlignment="Center"  FontSize="16" FontAttributes="Bold"/>
+                                <Label x:Name="lblShoeDate"     Margin="0,0,0,0"        Grid.Row="3" Grid.ColumnSpan="2"    HorizontalTextAlignment="Center"  FontSize="16" Padding="0,0,0,20"/>
+
+                                <Label Text="Price:"            Margin="0,-20,0,0"      Grid.Row="4" Grid.Column="0"        HorizontalTextAlignment="Center"  FontSize="16" FontAttributes="Bold"/>
+                                <Label x:Name="lblShoePrice"    Margin="0,0,0,0"        Grid.Row="4" Grid.Column="0"        HorizontalTextAlignment="Center"  FontSize="16"  />
+
+                                <Label Text="Resell price:"     Margin="0,-20,0,0"      Grid.Row="4" Grid.Column="1"        HorizontalTextAlignment="Center"  FontSize="16" FontAttributes="Bold"/>
+                                <Label x:Name="lblShoeResell"   Margin="0,0,0,0"        Grid.Row="4" Grid.Column="1"        HorizontalTextAlignment="Center"  FontSize="16"  />
+
+                                <Label Text="Story:"            Margin="0,-20,0,0"      Grid.Row="5" Grid.ColumnSpan="2"    HorizontalTextAlignment="Center"  FontSize="16" FontAttributes="Bold"/>
+                                <Label x:Name="lblShoeStory"    Margin="0,0,0,0"        Grid.Row="5" Grid.ColumnSpan="2"    HorizontalTextAlignment="Center"  FontSize="16"  />
+
+                                <Button Text="BUY"     VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Row="6" Grid.Column="0" Clicked="OpenGoatLink"/>
+                                <Button Text="FAVORITE" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Row="6" Grid.Column="1" Clicked="AddFavorite" />
+                                
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout> 
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

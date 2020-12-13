@@ -1,0 +1,17 @@
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\bin\Debug\netstandard2.0\SneakerProject.deps.json
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\bin\Debug\netstandard2.0\SneakerProject.dll
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\bin\Debug\netstandard2.0\ref\SneakerProject.dll
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\bin\Debug\netstandard2.0\SneakerProject.pdb
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\SneakerProject.csprojAssemblyReference.cache
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\Views\DetailPage.xaml.g.cs
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\Views\Favorites.xaml.g.cs
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\Views\FilterPage.xaml.g.cs
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\SneakerProject.AssemblyInfoInputs.cache
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\SneakerProject.AssemblyInfo.cs
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\SneakerProject.csproj.CoreCompileInputs.cache
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\SneakerProject.dll
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\ref\SneakerProject.dll
+C:\Users\Douwe\source\repos\SneakerProject2\SneakerProject2\SneakerProject2\obj\Debug\netstandard2.0\SneakerProject.pdb
